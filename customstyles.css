@@ -1177,3 +1177,15 @@
     border: 1px solid #8CC53D;
     background-color: #fff;
 }
+
+.get-started:hover {
+    border: 1px solid #008752;
+    background-color: #fff !important;
+    color: #008752 !important;
+}
+
+.learn-more:hover {
+    border: 1px solid #000000;
+    background-color: #fff !important;
+    color: #000000 !important;
+}
