@@ -17,7 +17,20 @@
     font-family: "Ramabhadra", sans-serif !important;
     font-weight: 500 !important;
 }
+.fordesktop .nav-item{
+    margin: 0 10px;
+}
 
+.fordesktop .nav-item .nav-link{
+    font-weight: 100 !important;
+}
+i.bi.bi-person{
+    font-size: 23px;
+}
+i.bi.bi-search
+{
+    font-size: 20px;
+}
 .hero-section {
     background-image: url('images/hero-banner-bg.png');
     background-repeat: no-repeat;
@@ -39,6 +52,7 @@
     color: #ffffff;
     padding: 5px 15px;
     border-radius: 8px;
+    font-weight: 700 !important;
 }
 
 .hero-section p {
@@ -547,8 +561,10 @@
     .reviewsspeak h2,
     .realestate h2,
     .faqs h2,
-    .itswork h2 {
-        font-size: 30px;
+    .itswork h2,
+    .cfone h2,
+    .cftwo h2 {
+        font-size: 30px !important;
     }
 
     .hero-section p,
@@ -557,8 +573,9 @@
     .explore p,
     .reviewsspeak p,
     .realestate p,
-    .faqs p {
-        font-size: 16px;
+    .faqs p,
+    .cfone p {
+        font-size: 16px !important;
     }
 
     .explore,
@@ -604,6 +621,27 @@
 
     .footer h5 {
         font-size: 17px;
+    }
+
+    .cfone h4,
+    .cftwo h4 {
+        font-size: 22px !important;
+    }
+
+    .bg-white {
+        padding: 20px !important;
+    }
+
+    .reviewsspeak {
+        margin: 10px !important;
+    }
+
+    .reviewsspeak p {
+        margin: 0 !important;
+    }
+
+    .footer {
+        border-radius: 100px 0 0 0;
     }
 
 }
@@ -811,8 +849,9 @@
 
     .banner h1,
     .whoweserve h2,
-    .about-driven h2 {
-        font-size: 40px;
+    .about-driven h2,
+    .blog h2 {
+        font-size: 40px !important;
     }
 
     .banner p,
@@ -837,8 +876,16 @@
     }
 
     .banner p,
-    .whoweserve p {
-        font-size: 14px;
+    .whoweserve p,
+    .hero-section p,
+    .success-section p,
+    .driven p,
+    .explore p,
+    .reviewsspeak p,
+    .realestate p,
+    .faqs p,
+    .cfone p {
+        font-size: 14px !important;
     }
 
     .our-mission {
@@ -853,6 +900,32 @@
 
     .our-mission h4 {
         font-size: 22px;
+    }
+
+    .banner h1,
+    .whoweserve h2,
+    .about-driven h2,
+    .blog h2 {
+        font-size: 26px !important;
+    }
+
+    .blog-boxes,
+    .blog-boxes-card {
+        padding: 0px !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+
+    .blog-boxes-card div {
+        padding: 10px !important;
+    }
+
+    .contactform.cfone {
+        padding: 10px !important;
+    }
+    .map-content{
+            justify-content: center !important;
+
     }
 }
 
@@ -1017,6 +1090,38 @@
         background-size: 80px;
         padding-bottom: 40px;
     }
+
+    .blog {
+        text-align: center !important;
+    }
+
+    .blog-boxes .pricing-tab {
+        display: block !important;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .blog-boxes .pricing-content {
+        margin: 0 !important;
+    }
+
+    .pricing {
+        padding: 00px !important;
+    }
+
+    .pricing h4 {
+        font-size: 32px !important;
+    }
+
+    .pricing span {
+        font-size: 28px !important;
+    }
+
+    .pricing ul li,
+    .btn-subscribe {
+        font-size: 14px !important;
+    }
+
 }
 
 /* Contact Us Page Styles */
@@ -1188,4 +1293,124 @@
     border: 1px solid #000000;
     background-color: #fff !important;
     color: #000000 !important;
+}
+
+
+@media (max-width: 320px) {
+
+    .hero-section .explore,
+    .success-section,
+    .driven,
+    .realestate,
+    .footer,
+    .explore,
+    .success-section,
+    .driven,
+    .realestate,
+    .footer,
+    .itswork,
+    .itswork div,
+    .faqs {
+        padding: 10px !important;
+    }
+
+    .hero-section h1,
+    .success-section h2,
+    .driven h2,
+    .explore h2,
+    .reviewsspeak h2,
+    .realestate h2,
+    .faqs h2,
+    .itswork h2,
+    .our-mission h2,
+    .whoweserve h2,
+    .about-driven h2 {
+        font-size: 28px !important;
+    }
+
+    .hero-section .get-started,
+    .hero-section .learn-more,
+    .realestate .get-started,
+    .realestate .learn-more {
+        font-size: 14px !important;
+    }
+
+    .success-card div {
+        padding: 10px !important;
+        text-align: center !important;
+    }
+
+    .success-section .arrow-image {
+        right: 50%;
+        bottom: 5px;
+        transform: translateX(50%);
+    }
+
+    .success-section h4 {
+        font-size: 22px;
+    }
+
+    .hero-section p,
+    .success-section p,
+    .driven p,
+    .explore p,
+    .reviewsspeak p,
+    .realestate p,
+    .faqs p,
+    .itswork p,
+    .about-driven p,
+    .our-mission p {
+        font-size: 14px;
+    }
+
+    .driven div {
+        padding: 10px !important;
+    }
+
+    .driven p {
+        margin-bottom: 0 !important;
+    }
+
+    .itswork div {
+        text-align: center !important;
+    }
+
+    .itswork p {
+        text-align: justify !important;
+    }
+
+    .reviewsspeak,
+    .reviewsspeak {
+        margin: 0 !important;
+    }
+
+    .realestate {
+        border-radius: 0 100px 0 0;
+    }
+
+    .footer {
+        border-radius: 100px 0 0 0;
+    }
+
+    .our-mission div {
+        padding: 10px !important;
+    }
+
+    .our-mission p {
+        text-align: justify;
+    }
+
+    .whoweserve,
+    .whoweserve div {
+        padding: 10px !important;
+    }
+
+    .realestate span {
+
+        font-weight: 700 !important;
+    }
+
+    .blog-boxes .pricing-content {
+        padding: 0 !important;
+    }
 }
