@@ -17,20 +17,23 @@
     font-family: "Ramabhadra", sans-serif !important;
     font-weight: 500 !important;
 }
-.fordesktop .nav-item{
+
+.fordesktop .nav-item {
     margin: 0 10px;
 }
 
-.fordesktop .nav-item .nav-link{
+.fordesktop .nav-item .nav-link {
     font-weight: 100 !important;
 }
-i.bi.bi-person{
+
+i.bi.bi-person {
     font-size: 23px;
 }
-i.bi.bi-search
-{
+
+i.bi.bi-search {
     font-size: 20px;
 }
+
 .hero-section {
     background-image: url('images/hero-banner-bg.png');
     background-repeat: no-repeat;
@@ -458,216 +461,6 @@ i.bi.bi-search
     color: white;
 }
 
-@media (max-width: 1024px) {
-    .formobile {
-        display: block;
-    }
-
-    .fordesktop {
-        display: none;
-    }
-
-    .nav-link,
-    .nav-item .btn {
-        font-size: 16px !important;
-        font-weight: 400 !important;
-    }
-
-    .hero-section {
-        border-radius: 0 0 0 150px;
-    }
-
-    .hero-section h1,
-    .success-section h2,
-    .driven h2,
-    .explore h2,
-    .reviewsspeak h2,
-    .realestate h2,
-    .faqs h2,
-    .itswork h2 {
-        font-size: 40px;
-        line-height: 1.3;
-    }
-
-    .hero-section p,
-    .success-section p,
-    .driven p,
-    .explore p,
-    .reviewsspeak p,
-    .realestate p,
-    .faqs p {
-        font-size: 18px;
-    }
-
-    .reviewsspeak {
-        overflow: hidden;
-    }
-
-    .hero-section .get-started,
-    .hero-section .learn-more,
-    .realestate .get-started,
-    .realestate .learn-more {
-        font-size: 18px;
-    }
-
-    .driven .left-card h2,
-    .driven .right-card h2 {
-        font-size: 28px;
-    }
-
-    .driven .left-card p,
-    .driven .right-card p {
-        font-size: 18px;
-    }
-
-    .itswork img {
-        top: 20px;
-        width: 50% !important;
-    }
-
-    .itswork h4 {
-        font-size: 22px;
-    }
-
-    .itswork p {
-        font-size: 16px;
-    }
-
-    .footer h5 {
-        font-size: 20px;
-    }
-
-    .footer-links li,
-    footer p {
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 0 !important;
-        border-radius: 0 0 0 80px;
-    }
-
-    .hero-section img {
-        width: 100%;
-    }
-
-    .hero-section h1,
-    .success-section h2,
-    .driven h2,
-    .explore h2,
-    .reviewsspeak h2,
-    .realestate h2,
-    .faqs h2,
-    .itswork h2,
-    .cfone h2,
-    .cftwo h2 {
-        font-size: 30px !important;
-    }
-
-    .hero-section p,
-    .success-section p,
-    .driven p,
-    .explore p,
-    .reviewsspeak p,
-    .realestate p,
-    .faqs p,
-    .cfone p {
-        font-size: 16px !important;
-    }
-
-    .explore,
-    .success-section,
-    .driven,
-    .realestate,
-    .footer {
-        padding: 20px !important;
-    }
-
-    .itswork img {
-        display: none;
-    }
-
-    .swiper {
-        overflow: inherit;
-    }
-
-    .swiper-slide {
-        transform: scale(1) !important;
-    }
-
-    .swiper-slide-active {
-        transform: scale(1.2) !important;
-    }
-
-    .realestate {
-        border-radius: 0 150px 0 0;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer div {
-        justify-content: center;
-    }
-
-    .footer .container {
-        padding: 0;
-        width: 100% !important;
-    }
-
-    .footer h5 {
-        font-size: 17px;
-    }
-
-    .cfone h4,
-    .cftwo h4 {
-        font-size: 22px !important;
-    }
-
-    .bg-white {
-        padding: 20px !important;
-    }
-
-    .reviewsspeak {
-        margin: 10px !important;
-    }
-
-    .reviewsspeak p {
-        margin: 0 !important;
-    }
-
-    .footer {
-        border-radius: 100px 0 0 0;
-    }
-
-}
-
-@media (max-width: 576px) {
-    .ecard {
-        height: 260px;
-    }
-
-    .ecard:hover {
-        height: 360px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer div {
-        justify-content: center;
-    }
-
-    .b-footer * {
-        text-align: center;
-    }
-}
-
 /* Hover Effects */
 
 .success-card:hover div {
@@ -817,117 +610,6 @@ i.bi.bi-search
     transform: translateY(40px);
 }
 
-@media (max-width: 1024px) {
-    .banner {
-        padding: 80px;
-    }
-
-    .our-mission img,
-    .whoweserve img {
-        width: 100%;
-    }
-
-    .our-mission h2 {
-        font-size: 45px;
-    }
-
-    .our-mission h4 {
-        font-size: 26px;
-    }
-
-    .our-mission p,
-    .whoweserve li {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner {
-        padding: 40px;
-        border-radius: 0 0 0 100px;
-    }
-
-    .banner h1,
-    .whoweserve h2,
-    .about-driven h2,
-    .blog h2 {
-        font-size: 40px !important;
-    }
-
-    .banner p,
-    .whoweserve p {
-        font-size: 18px;
-    }
-
-    .our-mission h2,
-    .our-mission h4,
-    .our-mission p {
-        text-align: center;
-    }
-
-    .whoweserve div {
-        justify-content: center !important;
-    }
-}
-
-@media (max-width: 425px) {
-    .banner {
-        padding: 0 20px 10px !important;
-    }
-
-    .banner p,
-    .whoweserve p,
-    .hero-section p,
-    .success-section p,
-    .driven p,
-    .explore p,
-    .reviewsspeak p,
-    .realestate p,
-    .faqs p,
-    .cfone p {
-        font-size: 14px !important;
-    }
-
-    .our-mission {
-        padding: 10px !important;
-    }
-
-    .our-mission h2,
-    .whoweserve h2,
-    .about-driven h2 {
-        font-size: 35px;
-    }
-
-    .our-mission h4 {
-        font-size: 22px;
-    }
-
-    .banner h1,
-    .whoweserve h2,
-    .about-driven h2,
-    .blog h2 {
-        font-size: 26px !important;
-    }
-
-    .blog-boxes,
-    .blog-boxes-card {
-        padding: 0px !important;
-        margin-bottom: 20px !important;
-        text-align: center !important;
-    }
-
-    .blog-boxes-card div {
-        padding: 10px !important;
-    }
-
-    .contactform.cfone {
-        padding: 10px !important;
-    }
-    .map-content{
-            justify-content: center !important;
-
-    }
-}
 
 /* Features Page Styles */
 .cfone {
@@ -1024,104 +706,6 @@ i.bi.bi-search
 .cftwo li::marker {
     color: #76C54B;
     font-size: 30px;
-}
-
-@media (max-width: 1024px) {
-    .cfone {
-        padding: 20px;
-    }
-
-    .cfone h4 {
-        font-size: 32px;
-
-    }
-
-    .cfone h2 {
-        font-size: 45px;
-    }
-
-    .cfone p {
-        font-size: 16px;
-        margin-bottom: 20px !important;
-    }
-
-    .cfone li {
-        font-size: 16px;
-    }
-
-    .cfone li::marker {
-        font-size: 25px;
-    }
-
-    .cftwo {
-        padding: 20px;
-    }
-
-    .cftwo h4 {
-        font-size: 32px;
-
-    }
-
-    .cftwo h2 {
-        font-size: 45px;
-    }
-
-    .cftwo p {
-        font-size: 16px;
-        margin-bottom: 20px !important;
-    }
-
-    .cftwo li {
-        font-size: 16px;
-    }
-
-    .cftwo li::marker {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 425px) {
-    .cfone {
-        background-size: 80px;
-        padding-bottom: 40px;
-    }
-
-    .cftwo {
-        background-size: 80px;
-        padding-bottom: 40px;
-    }
-
-    .blog {
-        text-align: center !important;
-    }
-
-    .blog-boxes .pricing-tab {
-        display: block !important;
-        width: 100%;
-        margin: 5px auto;
-    }
-
-    .blog-boxes .pricing-content {
-        margin: 0 !important;
-    }
-
-    .pricing {
-        padding: 00px !important;
-    }
-
-    .pricing h4 {
-        font-size: 32px !important;
-    }
-
-    .pricing span {
-        font-size: 28px !important;
-    }
-
-    .pricing ul li,
-    .btn-subscribe {
-        font-size: 14px !important;
-    }
-
 }
 
 /* Contact Us Page Styles */
@@ -1296,7 +880,410 @@ i.bi.bi-search
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
+    .banner {
+        padding: 80px;
+    }
+
+    .our-mission img,
+    .whoweserve img {
+        width: 100%;
+    }
+
+    .our-mission h2 {
+        font-size: 45px;
+    }
+
+    .our-mission h4 {
+        font-size: 26px;
+    }
+
+    .our-mission p,
+    .whoweserve li {
+        font-size: 16px;
+    }
+
+    .cfone {
+        padding: 20px;
+    }
+
+    .cfone h4 {
+        font-size: 32px;
+
+    }
+
+    .cfone h2 {
+        font-size: 45px;
+    }
+
+    .cfone p {
+        font-size: 16px;
+        margin-bottom: 20px !important;
+    }
+
+    .cfone li {
+        font-size: 16px;
+    }
+
+    .cfone li::marker {
+        font-size: 25px;
+    }
+
+    .cftwo {
+        padding: 20px;
+    }
+
+    .cftwo h4 {
+        font-size: 32px;
+
+    }
+
+    .cftwo h2 {
+        font-size: 45px;
+    }
+
+    .cftwo p {
+        font-size: 16px;
+        margin-bottom: 20px !important;
+    }
+
+    .cftwo li {
+        font-size: 16px;
+    }
+
+    .cftwo li::marker {
+        font-size: 25px;
+    }
+
+    .formobile {
+        display: block;
+    }
+
+    .fordesktop {
+        display: none;
+    }
+
+    .nav-link,
+    .nav-item .btn {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+
+    .hero-section {
+        border-radius: 0 0 0 150px;
+    }
+
+    .hero-section h1,
+    .success-section h2,
+    .driven h2,
+    .explore h2,
+    .reviewsspeak h2,
+    .realestate h2,
+    .faqs h2,
+    .itswork h2 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .hero-section p,
+    .success-section p,
+    .driven p,
+    .explore p,
+    .reviewsspeak p,
+    .realestate p,
+    .faqs p {
+        font-size: 18px;
+    }
+
+    .reviewsspeak {
+        overflow: hidden;
+    }
+
+    .hero-section .get-started,
+    .hero-section .learn-more,
+    .realestate .get-started,
+    .realestate .learn-more {
+        font-size: 18px;
+    }
+
+    .driven .left-card h2,
+    .driven .right-card h2 {
+        font-size: 28px;
+    }
+
+    .driven .left-card p,
+    .driven .right-card p {
+        font-size: 18px;
+    }
+
+    .itswork img {
+        top: 20px;
+        width: 50% !important;
+    }
+
+    .itswork h4 {
+        font-size: 22px;
+    }
+
+    .itswork p {
+        font-size: 16px;
+    }
+
+    .footer h5 {
+        font-size: 20px;
+    }
+
+    .footer-links li,
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 40px;
+        border-radius: 0 0 0 100px;
+    }
+
+    .banner h1,
+    .whoweserve h2,
+    .about-driven h2,
+    .blog h2 {
+        font-size: 40px !important;
+    }
+
+    .banner p,
+    .whoweserve p {
+        font-size: 18px;
+    }
+
+    .our-mission h2,
+    .our-mission h4,
+    .our-mission p {
+        text-align: center;
+    }
+
+    .whoweserve div {
+        justify-content: center !important;
+    }
+
+    .hero-section {
+        padding: 0 !important;
+        border-radius: 0 0 0 80px;
+    }
+
+    .hero-section img {
+        width: 100%;
+    }
+
+    .hero-section h1,
+    .success-section h2,
+    .driven h2,
+    .explore h2,
+    .reviewsspeak h2,
+    .realestate h2,
+    .faqs h2,
+    .itswork h2,
+    .cfone h2,
+    .cftwo h2 {
+        font-size: 30px !important;
+    }
+
+    .hero-section p,
+    .success-section p,
+    .driven p,
+    .explore p,
+    .reviewsspeak p,
+    .realestate p,
+    .faqs p,
+    .cfone p {
+        font-size: 16px !important;
+    }
+
+    .explore,
+    .success-section,
+    .driven,
+    .realestate,
+    .footer {
+        padding: 20px !important;
+    }
+
+    .itswork img {
+        display: none;
+    }
+
+    .swiper {
+        overflow: inherit;
+    }
+
+    .swiper-slide {
+        transform: scale(1) !important;
+    }
+
+    .swiper-slide-active {
+        transform: scale(1.2) !important;
+    }
+
+    .realestate {
+        border-radius: 0 150px 0 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer div {
+        justify-content: center;
+    }
+
+    .footer .container {
+        padding: 0;
+        width: 100% !important;
+    }
+
+    .footer h5 {
+        font-size: 17px;
+    }
+
+    .cfone h4,
+    .cftwo h4 {
+        font-size: 22px !important;
+    }
+
+    .bg-white {
+        padding: 20px !important;
+    }
+
+    .reviewsspeak {
+        margin: 10px !important;
+    }
+
+    .reviewsspeak p {
+        margin: 0 !important;
+    }
+
+    .footer {
+        border-radius: 100px 0 0 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .ecard {
+        height: 260px;
+    }
+
+    .ecard:hover {
+        height: 360px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer div {
+        justify-content: center;
+    }
+
+    .b-footer * {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .banner {
+        padding: 0 20px 10px !important;
+    }
+
+    .banner p,
+    .whoweserve p,
+    .hero-section p,
+    .success-section p,
+    .driven p,
+    .explore p,
+    .reviewsspeak p,
+    .realestate p,
+    .faqs p,
+    .cfone p {
+        font-size: 14px !important;
+    }
+
+    .our-mission {
+        padding: 10px !important;
+    }
+
+    .our-mission h2,
+    .whoweserve h2,
+    .about-driven h2 {
+        font-size: 35px;
+    }
+
+    .our-mission h4 {
+        font-size: 22px;
+    }
+
+    .banner h1,
+    .whoweserve h2,
+    .about-driven h2,
+    .blog h2 {
+        font-size: 26px !important;
+    }
+
+    .blog-boxes,
+    .blog-boxes-card {
+        padding: 0px !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+
+    .blog-boxes-card div {
+        padding: 10px !important;
+    }
+
+    .contactform.cfone {
+        padding: 10px !important;
+    }
+
+    .map-content {
+        justify-content: center !important;
+
+    }
+
+    .cfone {
+        background-size: 80px;
+        padding-bottom: 40px;
+    }
+
+    .cftwo {
+        background-size: 80px;
+        padding-bottom: 40px;
+    }
+
+    .blog {
+        text-align: center !important;
+    }
+
+    .pricing {
+        padding: 00px !important;
+    }
+
+    .pricing h4 {
+        font-size: 32px !important;
+    }
+
+    .pricing span {
+        font-size: 28px !important;
+    }
+
+    .pricing ul li,
+    .btn-subscribe {
+        font-size: 14px !important;
+    }
+}
+
+
+@media (min-width:320px) and (max-width: 529px) {
 
     .hero-section .explore,
     .success-section,
@@ -1361,6 +1348,16 @@ i.bi.bi-search
     .about-driven p,
     .our-mission p {
         font-size: 14px;
+    }
+
+    .blog-boxes .pricing-tab {
+        display: block !important;
+        width: 100% !important;
+        margin: 5px auto;
+    }
+
+    .blog-boxes .pricing-content {
+        margin: 0 !important;
     }
 
     .driven div {
