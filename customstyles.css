@@ -26,6 +26,17 @@
     font-weight: 100 !important;
 }
 
+.logo-nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 30px;
+    border-radius: 50%;
+}
+
 i.bi.bi-person {
     font-size: 23px;
 }
