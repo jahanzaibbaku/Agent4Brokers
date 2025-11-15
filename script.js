@@ -46,3 +46,38 @@ document.querySelectorAll('.pricing-tab').forEach(btn => {
     document.querySelector(target).classList.remove('d-none');
   });
 });
+
+const password = document.getElementById("password");
+const toggle = document.getElementById("togglePassword");
+
+toggle.addEventListener("click", function () {
+  if (password.type === "password") {
+    password.type = "text";
+    toggle.classList.remove("bi-eye-fill");
+    toggle.classList.add("bi-eye-slash-fill");
+  } else {
+    password.type = "password";
+    toggle.classList.remove("bi-eye-slash-fill");
+    toggle.classList.add("bi-eye-fill");
+  }
+});
+
+
+function goToStep(step) {
+
+    // Hide all steps
+    document.querySelectorAll(".step-box").forEach(box => {
+        box.classList.remove("active");
+    });
+
+    // Show selected step
+    document.getElementById("step" + step).classList.add("active");
+
+    // Update circles
+    document.querySelectorAll(".step-circle").forEach(c => {
+        c.classList.remove("active");
+    });
+
+    // Highlight current step
+    document.getElementById("s" + step).classList.add("active");
+}
