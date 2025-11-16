@@ -65,19 +65,21 @@ toggle.addEventListener("click", function () {
 
 function goToStep(step) {
 
-    // Hide all steps
-    document.querySelectorAll(".step-box").forEach(box => {
-        box.classList.remove("active");
-    });
+  // Hide all steps
+  document.querySelectorAll(".step-box").forEach(box => {
+    box.classList.remove("active");
+  });
 
-    // Show selected step
-    document.getElementById("step" + step).classList.add("active");
+  // Show selected step
+  document.getElementById("step" + step).classList.add("active");
 
-    // Update circles
-    document.querySelectorAll(".step-circle").forEach(c => {
-        c.classList.remove("active");
-    });
+  // Update circles
+  document.querySelectorAll(".step-circle").forEach(c => {
+    c.classList.remove("active");
+  });
 
-    // Highlight current step
-    document.getElementById("s" + step).classList.add("active");
+  // Highlight current step
+  document.getElementById("s" + step).classList.add("active");
 }
+
+
