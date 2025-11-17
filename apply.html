@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Customstyles CSS -->
     <link href="customstyles.css" rel="stylesheet">
 </head>
@@ -68,7 +73,7 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="flex-grow-1 p-4">
+        <main class="flex-grow-1 p-4" style="overflow: hidden;">
 
             <!-- Welcome section -->
             <div class="welcome-box p-3 mb-4">
@@ -85,7 +90,7 @@
             </div>
 
             <!-- Pipeline View -->
-            <h2 class="profile-completion">Pipeline <span>View</span></h2>
+            <h2 class="profile-completion">Let's <span>Connect</span></h2>
             <div class="rounded-3 p-4 mb-4 shadow p-z">
                 <div class="row g-3 align-items-center">
                     <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 d-flex pipeline-col">
@@ -129,57 +134,57 @@
                 </div>
             </div>
 
-            <!-- Apply Now! -->
-            <h2 class="profile-completion">Apply <span>Now!</span></h2>
-            <div class="step-box active" id="step1">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">Name*</label>
-                        <input type="text" class="form-control" placeholder="Enter your Name">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">Experience*</label>
-                        <input type="text" class="form-control" placeholder="Enter your Experience">
-                    </div>
+            <!-- Agent Reports -->
+            <div class="agent-reports">
+                <div class="report shadow">
+                    <h2>100+</h2>
+                    <h4>Deals</h4>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">License Type*</label>
-                        <input type="text" class="form-control" placeholder="Enter your License Type">
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">Date Issued*</label>
-                        <input type="text" class="form-control" placeholder="Enter your Date Issued">
-                    </div>
+                <div class="report shadow">
+                    <h2>150+</h2>
+                    <h4>Happy Clients</h4>
                 </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Upload and attach files CV</label>
-                    <div class="upload-box">
-                        <i class="bi bi-upload" style="font-size:28px;"></i>
-                        <p class="mt-2 mb-0 fw-bold">Click to upload or drag and drop</p>
-                        <small>Supported formats: pdf, csv, xlsx</small>
-                    </div>
-                </div>
-                <button class="next-btn" onclick="goToStep(2)">Apply</button>
-            </div>
-
-            <!-- STEP 2 -->
-            <div class="step-box" id="step2">
-
-                <div class="row">
-                    <div class="col-md-12 mb-3  text-center applied" style="background-color: #F4F4F4;">
-                        <img src="images/dashboard/thumbsUp.png">
-                        <h4>Thank You For Applying</h4>
-                        <h2>Taylor Morgan!</h2>
-                        <button class="track-btn">Track Your  Request</button>
-                    </div>
-
+                <div class="report shadow">
+                    <h2>20</h2>
+                    <h4>Ongoing Projects</h4>
                 </div>
             </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials-wrap">
+                <div class="container">
+                    <div class="carousel-testimonial owl-carousel">
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <p class="message">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <p class="message">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <p class="message">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
     </div>
     <script>
@@ -193,8 +198,23 @@
             });
 
         });
+
     </script>
 
+    <script>
+
+        $('.carousel-testimonial').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            items: 1,   // ★ Always ONE testimonial
+            responsive: {
+                0: { items: 1 },
+                600: { items: 1 },
+                1000: { items: 1 }
+            }
+        });
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
