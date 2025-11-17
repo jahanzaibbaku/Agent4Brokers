@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .formobile {
     display: none;
@@ -9,7 +10,7 @@
 }
 
 * {
-    font-family: "poppin", sans-serif !important;
+    font-family: "poppins", sans-serif !important;
 }
 
 .ramabhadra-regular {
@@ -1782,39 +1783,98 @@ i.bi.bi-search {
     border: 5px solid #1e8a45;
 }
 
-.broker-card {
+.broker-card,
+.broker-card-score {
     border-radius: 12px;
     border: none;
     box-shadow: 0 0 10px 1px #c9c9c930;
     margin-top: 10px;
     padding-top: 30px !important;
     padding-bottom: 40px !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.broker-card-score {
+    padding-bottom: 0px !important;
+    position: relative;
 }
 
 .broker-card img {
     width: 110px;
     height: 110px;
+    position: relative;
 }
 
-.broker-card h6 {
+.broker-card-score .view-card-img {
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.broker-card-score .view-card-img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url('images/dashboard/connect-img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    visibility: hidden;
+}
+
+.broker-card-score:hover .view-card-img::before {
+    visibility: visible;
+}
+
+.broker-card h6,
+.broker-card-score h6 {
     color: #000;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 20px;
 }
 
-.broker-card p {
+.broker-card p,
+.broker-card-score p {
     color: #808080;
     font-size: 14px;
     line-height: 14px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
-.broker-card a {
+.broker-card a,
+.broker-card-score a {
     text-decoration: none;
     color: #0484CD;
     font-size: 14px;
     font-weight: 400;
+}
+
+.broker-card-score .score {
+    background-color: #76C54B;
+    color: #ffffff;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    height: 80px;
+    width: 150px;
+    margin: 20px auto 0;
+    padding: 10px;
+}
+
+.broker-card-score .score h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.broker-card-score .score p {
+    color: #fff;
+    font-size: 14px;
 }
 
 .circle-wrap {
@@ -2035,7 +2095,148 @@ i.bi.bi-search {
     /* Default hidden */
 }
 
+.learning-card {
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 5px 5px #F5F5F5;
+}
+
+.learning-card:hover {
+    border: 2px solid #76C54B;
+}
+
+.learning-card h6 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.learning-info {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learning-info ul {
+    display: flex;
+    list-style: none;
+    padding: 0 !important;
+    margin: auto 0;
+}
+
+.learning-info ul li {
+    margin: auto 10px auto 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-pipeline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px !important;
+}
+
+.user-name h4 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600 !important;
+}
+
+.user-name p {
+    font-size: 18px;
+    color: #808080 !important;
+    font-weight: 400;
+}
+
+.user-pipeline button {
+    border: none;
+    background: none;
+    padding: 12px 16px;
+    background: #0484CD;
+    border: 1px dashed transparent;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.user-pipeline button:hover {
+    background-color: transparent;
+    border: 1px dashed #0484CD;
+    color: #0484CD;
+}
+
+.user-experience p {
+    margin: 12px auto !important;
+    color: #808080;
+}
+
+.user-experience i {
+    color: #fff;
+    border: 1px solid;
+    padding: 3px 8px;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+.user-connect {
+    background-color: #81CA59;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.user-connect i {
+    font-size: 20px;
+}
+
 @media (max-width: 1024px) {
+    .user-name h4 {
+        font-size: 28px;
+    }
+
+    .user-pipeline button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .user-name p {
+        margin: 0;
+    }
+
+    .user-experience i {
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+
+    .user-experience p {
+        font-size: 14px;
+    }
+
+    .learning-card h6 {
+        font-size: 16px;
+    }
+
+    .learning-info ul li {
+        font-size: 12px;
+    }
+
+    .learning-info img {
+        width: 80%;
+    }
+
+    .login {
+        width: 100vw;
+        height: auto;
+    }
+
     .profile-completion {
         font-size: 24px;
     }
@@ -2088,26 +2289,23 @@ i.bi.bi-search {
         width: 50%;
     }
 
-    .broker-card h6 {
+    .broker-card h6,
+    .broker-card-score h6 {
         font-size: 26px;
     }
 
-    .broker-card p {
+    .broker-card p,
+    .broker-card-score h6 {
         font-size: 18px;
         line-height: 22px;
     }
 
-    .broker-card a {
+    .broker-card a,
+    .broker-card-score a {
         font-size: 18px;
     }
 }
 
-@media (max-width: 1024px) {
-    .login {
-        width: 100vw;
-        height: auto;
-    }
-}
 
 @media (max-width: 768px) {
     .welcome-box {
@@ -2204,9 +2402,31 @@ i.bi.bi-search {
     .social-buttons .facebook-login {
         font-size: 24px !important;
     }
+
+    .learning-card h6 {
+        font-size: 18px;
+    }
+
+    .learning-info ul li {
+        font-size: 14px;
+    }
 }
 
 @media (min-width:320px) and (max-width: 529px) {
+    .pipeline-col {
+        display: block !important;
+    }
+
+    .pipeline-col img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .user-experience {
+        display: block !important;
+    }
+
     .login {
         transform: translate(0);
         top: 0;
@@ -2280,21 +2500,43 @@ i.bi.bi-search {
         font-size: 14px;
     }
 
-    .broker-card h6 {
+    .broker-card h6,
+    .broker-card-score h6 {
         font-size: 20px;
     }
 
-    .broker-card p {
+    .broker-card p,
+    .broker-card-score p {
         font-size: 14px;
         line-height: 14px;
     }
 
-    .broker-card a {
+    .broker-card a,
+    .broker-card-score a {
         font-size: 14px;
     }
 }
 
 @media (max-width: 425px) {
+    .user-connect {
+        width: 100px;
+        height: 100px;
+        padding: 20px 0;
+    }
+
+    .p-z {
+        padding: 5px !important;
+    }
+
+    .user-pipeline {
+        display: block;
+        text-align: center;
+    }
+
+    .user-contact {
+        margin: 5px 0;
+    }
+
     .welcome-box {
         width: 70%;
         display: block;
