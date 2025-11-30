@@ -526,7 +526,7 @@ i.bi.bi-search {
     background-color: #DDFDF0;
     color: #000;
     margin: 0;
-    padding: 30px;
+    padding: 30px 20px;
     font-size: 24px;
     font-weight: bold !important;
     box-shadow: 0 0 5px 1px #26262615;
@@ -543,6 +543,8 @@ i.bi.bi-search {
 .accordion-body {
     font-size: 24px;
     font-weight: 400;
+    width: 80%;
+    padding: 0 30px 30px;
 }
 
 /* Body when active */
@@ -683,7 +685,11 @@ i.bi.bi-search {
     background-color: #DDFDF0;
     border-radius: 0 0 0 200px;
     border-bottom: 20px solid #008752;
-    padding: 120px;
+    padding: 80px 120px;
+}
+
+.banner .container {
+    padding-top: 130px !important;
 }
 
 .banner h1 {
@@ -706,7 +712,7 @@ i.bi.bi-search {
 .banner h1 span::before {
     content: '';
     width: 100%;
-    height: 70%;
+    height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -716,6 +722,7 @@ i.bi.bi-search {
     border-radius: 8px;
     z-index: -1;
 }
+
 .banner p {
     font-size: 24px;
     color: #242424;
@@ -924,6 +931,13 @@ i.bi.bi-search {
     font-size: 30px;
 }
 
+.bi-circle-fill::before {
+    font-size: 14px;
+    color: #8CC53D;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
 /* Contact Us Page Styles */
 .map-wrapper {
     position: relative;
@@ -954,6 +968,18 @@ i.bi.bi-search {
     width: 260px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contactform {
+    width: 1200px;
+    background-size: 15%;
+    background-position: 95% 95% !important;
+}
+
+.contactform input,
+textarea.form-control {
+    padding: 15px;
+    border-radius: 20px !important;
 }
 
 @media (max-width: 425px) {
@@ -1042,10 +1068,12 @@ i.bi.bi-search {
     font-weight: 400 !important;
 
 }
+
 .pricing p {
     font-size: 18px;
     font-weight: 400;
 }
+
 .pricing span {
     font-size: 40px;
     font-weight: 600 !important;
@@ -1123,12 +1151,14 @@ i.bi.bi-search {
     background-color: #fff !important;
     color: #008752 !important;
 }
+
 textarea.form-control,
-input.form-control{
+input.form-control {
     font-size: 20px;
     font-weight: 500;
 }
-.contactform button.btn.btn-primary{
+
+.contactform button.btn.btn-primary {
     font-size: 22px;
     font-weight: 500;
 }
