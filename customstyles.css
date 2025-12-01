@@ -3729,7 +3729,7 @@ input.form-control {
     }
 
     .driven-container {
-        width: 350px;
+        width: 100%;
     }
 
     .driven-result {
