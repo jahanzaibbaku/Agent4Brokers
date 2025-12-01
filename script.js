@@ -8,7 +8,7 @@ var swiper = new Swiper(".testimonialSwiper", {
   speed: 700,
   breakpoints: {
     0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
+    768: { slidesPerView: 1 },
     992: { slidesPerView: 3 }
   }
 });
