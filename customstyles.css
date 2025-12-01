@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .formobile {
     display: none;
 }
@@ -65,9 +66,24 @@ i.bi.bi-search {
 }
 
 .hero-section h1 {
+    width: 80%;
     color: #0078AE;
     font-size: 72px;
     line-height: 80px;
+    margin: auto;
+}
+
+.hero-section p {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: #242424;
+    margin: auto;
+}
+
+.p-4.h-100.rounded-4.shadow-sm.position-relative {
+    width: 387px !important;
+    height: 383px !important;
 }
 
 .h1-font span {
@@ -179,6 +195,11 @@ i.bi.bi-search {
     font-weight: 400;
     line-height: 80px;
     font-family: "Ramabhadra", sans-serif !important;
+}
+
+.driven-h2,
+.driven-p {
+    width: 850px !important;
 }
 
 .driven p {
@@ -2475,6 +2496,16 @@ input.form-control {
     color: #808080 !important;
 }
 
+.realestate h2 {
+    width: 961px;
+    margin: auto;
+}
+
+.realestate p {
+    width: 736px;
+    margin: auto;
+}
+
 /* Medium Laptop */
 @media (min-width: 1200px) and (max-width: 1399px) {
 
@@ -2608,7 +2639,25 @@ input.form-control {
 }
 
 /* Tablet Landscape / Small Laptop */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
+
+    .driven-h2,
+    .driven-p,
+    .realestate h2,
+    .realestate p {
+        width: 100% !important;
+    }
+
+    .success-section .arrow-image {
+        right: 10px;
+        bottom: 5px;
+    }
+
+    .p-4.h-100.rounded-4.shadow-sm.position-relative {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
     .pricing h4 {
         font-size: 40px;
     }
@@ -3078,7 +3127,7 @@ input.form-control {
 }
 
 /* TABLETS RESPONSIVE */
-@media (min-width: 576px) and (max-width: 991px) {
+@media (max-width: 991px) {
     .pricing h4 {
         font-size: 40px;
     }
@@ -3585,6 +3634,19 @@ input.form-control {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 575px) {
+    .quick-link {
+        text-align: center;
+    }
+
+    .accordion-body.active-body {
+        padding-right: 15px;
+    }
+
+    .itswork h3,
+    .itswork h4 {
+        font-size: 22px;
+    }
+
     .contactform.cfone {
         width: 90%;
     }
@@ -3620,10 +3682,6 @@ input.form-control {
 
     .blog-boxes-card {
         padding: 10px;
-    }
-
-    .hero-section {
-        overflow: hidden;
     }
 
     .formobile {
@@ -3733,7 +3791,7 @@ input.form-control {
     }
 
     .driven-result {
-        width: 300px;
+        width: 100%;
     }
 
     .driven .left-card,
@@ -3750,12 +3808,12 @@ input.form-control {
     }
 
     .ecard {
-        height: 310px !important;
+        height: 280px !important;
         margin: 10px;
     }
 
     .ecard:hover {
-        height: 385px !important;
+        height: 365px !important;
     }
 
     .itswork img {
@@ -4261,5 +4319,9 @@ input.form-control {
 
     .quick-link {
         display: block;
+    }
+
+    .p-4.h-100.rounded-4.shadow-sm.position-relative {
+        height: 285px !important;
     }
 }
