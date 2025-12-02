@@ -1,13 +1,13 @@
 var swiper = new Swiper(".testimonialSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 40,
-  centeredSlides: true,
-  centeredSlidesBounds: true,
   loop: true,
+  centeredSlides: true,
   grabCursor: true,
-  speed: 700,
+  speed: 800,
+  spaceBetween: 30,
+  loopAdditionalSlides: 8,
+
   breakpoints: {
-    0: { slidesPerView: 1 },
+    425: { slidesPerView: 1 },
     768: { slidesPerView: 1 },
     992: { slidesPerView: 3 }
   }

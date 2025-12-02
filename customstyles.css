@@ -2507,17 +2507,18 @@ input.form-control {
     width: 736px;
     margin: auto;
 }
-.blog-boxes .container > .row {
+
+.blog-boxes .container>.row {
     display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
     margin: 0 !important;
 }
 
 .blog-boxes-card {
     padding: 0 !important;
-    flex: 0 0 calc(33.333% - 30px); 
+    flex: 0 0 calc(33.333% - 30px);
 }
 
 /* Medium Laptop */
@@ -2654,7 +2655,7 @@ input.form-control {
 
 /* Tablet Landscape / Small Laptop */
 @media (max-width: 1199px) {
-        .about-driven img {
+    .about-driven img {
         transform: translateY(60px);
     }
 
@@ -3148,9 +3149,11 @@ input.form-control {
 
 /* TABLETS RESPONSIVE */
 @media (max-width: 991px) {
-     .blog-boxes-card {
-        flex: 0 0 calc(50% - 30px); /* 2 per row */
+    .blog-boxes-card {
+        flex: 0 0 calc(50% - 30px);
+        /* 2 per row */
     }
+
     .pricing h4 {
         font-size: 40px;
     }
@@ -3657,20 +3660,24 @@ input.form-control {
         margin-left: 0 !important;
         float: right;
     }
-    .success-section{
+
+    .success-section {
         padding-bottom: 0 !important;
     }
-   
+
 }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 575px) {
-    .blog-boxes .container > .row{
+    .blog-boxes .container>.row {
         gap: 0px;
     }
-     .blog-boxes-card {
-        flex: 0 0 100%; /* 1 per row */
+
+    .blog-boxes-card {
+        flex: 0 0 100%;
+        /* 1 per row */
     }
+
     .quick-link {
         text-align: center;
     }
@@ -3845,12 +3852,16 @@ input.form-control {
     }
 
     .ecard {
-        height: 280px !important;
+        height: 265px !important;
         margin: 10px;
     }
 
     .ecard:hover {
         height: 365px !important;
+    }
+    .realestate .get-started, .realestate .learn-more{
+        margin: 0 !important;
+        margin: 10px !important;
     }
 
     .itswork img {
@@ -4335,14 +4346,6 @@ input.form-control {
         font-size: 14px;
     }
 
-    .ecard {
-        height: 260px;
-    }
-
-    .ecard:hover {
-        height: 360px;
-    }
-
     .footer {
         text-align: center;
     }
@@ -4360,6 +4363,12 @@ input.form-control {
     }
 
     .p-4.h-100.rounded-4.shadow-sm.position-relative {
-        height: 285px !important;
+        height: auto !important;
+    }
+
+    .success-section .arrow-image {
+        right: 0;
+        bottom: 0;
+        transform: translateX(0);
     }
 }
