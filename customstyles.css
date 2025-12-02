@@ -752,6 +752,8 @@ i.bi.bi-search {
     font-size: 24px;
     color: #242424;
     font-weight: 400;
+    width: 704px;
+    margin: auto;
 }
 
 .our-mission h2 {
@@ -2505,9 +2507,21 @@ input.form-control {
     width: 736px;
     margin: auto;
 }
+.blog-boxes .container > .row {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    margin: 0 !important;
+}
+
+.blog-boxes-card {
+    padding: 0 !important;
+    flex: 0 0 calc(33.333% - 30px); 
+}
 
 /* Medium Laptop */
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (max-width: 1399px) {
 
     .hero-section h1,
     .h1-font span {
@@ -2640,6 +2654,9 @@ input.form-control {
 
 /* Tablet Landscape / Small Laptop */
 @media (max-width: 1199px) {
+        .about-driven img {
+        transform: translateY(60px);
+    }
 
     .driven-h2,
     .driven-p,
@@ -2690,6 +2707,9 @@ input.form-control {
         padding: 15px;
     }
 
+    .banner p {
+        width: 100%;
+    }
 
     .banner p,
     .our-mission p,
@@ -3128,6 +3148,9 @@ input.form-control {
 
 /* TABLETS RESPONSIVE */
 @media (max-width: 991px) {
+     .blog-boxes-card {
+        flex: 0 0 calc(50% - 30px); /* 2 per row */
+    }
     .pricing h4 {
         font-size: 40px;
     }
@@ -3193,7 +3216,6 @@ input.form-control {
     .banner h1,
     .banner h1 span,
     .whoweserve h2,
-    .about-driven h2,
     .blog {
         font-size: 50px !important;
         text-align: center !important;
@@ -3248,6 +3270,10 @@ input.form-control {
         width: 100%;
     }
 
+    .about-driven .container {
+        padding: 50px 30px 0;
+    }
+
     .hero-section h1,
     .success-section h2,
     .driven h2,
@@ -3259,6 +3285,7 @@ input.form-control {
     .cfone h2,
     .cftwo h2,
     .h1-font span,
+    .about-driven h2,
     .realestate span {
         font-size: 40px !important;
     }
@@ -3630,10 +3657,20 @@ input.form-control {
         margin-left: 0 !important;
         float: right;
     }
+    .success-section{
+        padding-bottom: 0 !important;
+    }
+   
 }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 575px) {
+    .blog-boxes .container > .row{
+        gap: 0px;
+    }
+     .blog-boxes-card {
+        flex: 0 0 100%; /* 1 per row */
+    }
     .quick-link {
         text-align: center;
     }
@@ -3887,8 +3924,6 @@ input.form-control {
     }
 
     .banner h1,
-    .whoweserve h2,
-    .about-driven h2,
     .blog h2,
     .banner h1 span {
         font-size: 40px !important;
@@ -3963,7 +3998,7 @@ input.form-control {
     }
 
     .contactform h2 {
-        font-size: 30px;
+        font-size: 35px !important;
     }
 
     .user-connect {
@@ -4045,7 +4080,7 @@ input.form-control {
     .about-driven .container {
         width: 100%;
         padding: 20px;
-        height: 600px;
+        height: auto;
     }
 
     .whoweserve img,
@@ -4058,9 +4093,12 @@ input.form-control {
     }
 
     .about-driven {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
 
+    .about-driven img {
+        transform: translateY(50px);
+    }
 
     .our-mission p {
         text-align: justify;
