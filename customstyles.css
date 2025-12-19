@@ -3819,6 +3819,124 @@ input.form-control {
     margin-left: 10px;
 }
 
+.schedule-form {
+    background-color: #fff;
+    width: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 5px 4px 50px 0 #00000010;
+    overflow: hidden;
+}
+
+.s-f form {
+    padding: 0 20px;
+    width: 85%;
+    margin: auto;
+}
+
+.s-h h3 {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.f-input {
+    margin: 15px auto;
+}
+
+.f-input:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.f-input label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.f-input .f-i-w {
+    display: inline-block;
+    width: 60%;
+}
+
+.f-input .f-i-t {
+    display: inline-block;
+    width: 35%;
+}
+
+.schedule-form input {
+    background-color: #F4F4F4;
+    outline: none;
+    border: none;
+    border: 1px solid #DADADA;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.schedule-form input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.broker-agent {
+    background-color: #F4F4F4;
+    margin: 20px 0;
+}
+
+.broker-agent .ba-detail {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #DADADA;
+}
+
+.broker-agent .ba-detail:nth-last-child(1) {
+    border-bottom: 1px solid #DADADA;
+}
+
+
+.ba-detail .ba-name {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.ba-name h5 {
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.ba-detail p {
+    color: #808080;
+}
+
+.s-f button {
+    background: #76C54B;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+.modal-content{
+    border: none;
+}
 @media (max-width: 1399px) {
 
     .hero-section h1,
@@ -4677,6 +4795,42 @@ input.form-control {
 }
 
 @media (max-width: 991px) {
+    .s-h h3 {
+        font-size: 25px;
+    }
+
+    .f-input {
+        margin: 5px 0;
+    }
+
+    .schedule-form input {
+        padding: 10px;
+    }
+
+    .schedule-form input::placeholder {
+        font-size: 14px;
+    }
+
+    .ba-name h5 {
+        font-size: 14px;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .ba-detail p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .s-f button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .broker-agent .ba-detail {
+        padding: 10px 0;
+    }
+
     .ausa div {
         justify-content: center;
     }
@@ -5274,14 +5428,25 @@ input.form-control {
 }
 
 @media (max-width: 575px) {
+    .schedule-form{
+        width: 95%;
+    }
+    .s-f form{
+        width: 100%;
+    }
+    .broker-agent .ba-detail{
+        padding: 5px;
+    }
     .reset-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    .reset-btn button:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reset-btn button:nth-child(2) {
         margin-left: 0;
     }
+
     .reset-btn button {
         width: 150px;
         height: 30px;

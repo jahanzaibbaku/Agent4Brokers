@@ -151,7 +151,7 @@
           <h3><strong>Calendar</strong> / <span style="color: #0484CD; font-weight: 600;">Tasks</span></h3>
           <p class="text-muted">Schedule interviews, set reminders.</p>
         </div>
-        <button class="btn px-4">Schedule Interview</button>
+        <button class="btn px-4" data-bs-toggle="modal" data-bs-target="#scheduleModal">Schedule Interview</button>
       </div>
 
       <div class="row">
@@ -202,7 +202,65 @@
     </div>
 
   </div>
+  <div class="modal fade" id="scheduleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="schedule-form">
+          <div class="s-h">
+            <h3>Schedule <span style="color: #0484CD;">Interview</span></h3>
+          </div>
+          <div class="s-f">
+            <form action="#">
+              <div class="f-input">
+                <label>Name<span style="color: #D0021B;">*</span></label>
+                <input type="text" placeholder="Enter your Name">
+              </div>
+              <div class="f-input">
+                <div class="f-i-w">
+                  <label>When<span style="color: #D0021B;">*</span></label>
+                  <input type="text" placeholder="Wed - 18th September">
+                </div>
+                <div class="f-i-t">
+                  <label>Time<span style="color: #D0021B;">*</span></label>
+                  <input type="text" placeholder="11:00 am">
+                </div>
+              </div>
+              <div class="f-input">
+                <label>Invite connected Agent<span style="color: #D0021B;">*</span></label>
+                <input type="text" placeholder="Jessica">
+              </div>
+            </form>
+            <div class="broker-agent">
+              <div class="ba-detail">
+                <div class="ba-name">
+                  <img src="images/agent-pic.png" alt="agent-pic">
+                  <h5>Jessica Lam</h5>
+                </div>
+                <p>Junior Agent</p>
+              </div>
 
+              <div class="ba-detail">
+                <div class="ba-name">
+                  <img src="images/agent-pic.png" alt="agent-pic">
+                  <h5>Jessica Lam</h5>
+                </div>
+                <p>Junior Agent</p>
+              </div>
+
+              <div class="ba-detail">
+                <div class="ba-name">
+                  <img src="images/agent-pic.png" alt="agent-pic">
+                  <h5>Jessica Lam</h5>
+                </div>
+                <p>Junior Agent</p>
+              </div>
+            </div>
+            <button>Create Meeting </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
